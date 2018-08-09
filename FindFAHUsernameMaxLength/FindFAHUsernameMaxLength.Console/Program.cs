@@ -59,6 +59,12 @@
                 }
 
                 Console.WriteLine($"The max username size found was '{names.Max(name => name.Length)}'");
+                Console.WriteLine(
+                    $"Found '{names.Count(name => name.Length > 50)}' users' name that exceeded 50 chars");
+                Console.WriteLine(
+                    $"Found '{names.Count(name => name.Length > 75)}' users' name that exceeded 75 chars");
+                Console.WriteLine(
+                    $"Found '{names.Count(name => name.Length > 100)}' users' name that exceeded 100 chars");
             }
         }
     }
